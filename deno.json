@@ -1,0 +1,16 @@
+{
+  "name": "@username/my-first-lost-addon",
+  "version": "1.0.0",
+  "compilerOptions": {
+    "noImplicitOverride": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "tasks": {
+    "build": "lost-c3 build",
+    "dev": "lost-c3 serve"
+  },
+  "imports": {
+    "@config": "./lost.config.ts"
+  }
+}
