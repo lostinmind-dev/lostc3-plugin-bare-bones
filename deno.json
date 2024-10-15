@@ -7,8 +7,8 @@
     "experimentalDecorators": true
   },
   "tasks": {
-    "build": "lost-c3 build",
-    "dev": "lost-c3 serve"
+    "build": "lost build",
+    "serve": "lost serve"
   },
   "imports": {
     "@config": "./lost.config.ts"
