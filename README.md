@@ -2,8 +2,8 @@
 
 There is a Lost bare-bones project for 'plugin' addon type.
 
-## Installation
-Use `deno install...`
+<!-- ## Installation
+Use `lost create --plugin` -->
 
 ## Development
 - Use `deno task build` OR `lost build` to build addon.

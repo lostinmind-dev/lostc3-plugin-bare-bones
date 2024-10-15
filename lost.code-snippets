@@ -1,0 +1,79 @@
+{
+	"LostCategory": {
+		"prefix": "!cc",
+		"body": [
+			"import { Category, Action, Condition, Expression, Param } from 'jsr:@lost-c3/lib';",
+			"import type { Instance } from '../Instance.ts';",
+			"",
+			"@Category({Id: '${1:categoryId}', Name: '${2:Category Name}', Deprecated: ${3:false}, InDevelopment: ${4:false}})",
+			"class MyCategory {",
+			"    /**",
+			"     * Actions",
+			"     */",
+			"    ${5:}",
+			"    /**",
+			"     * Conditions",
+			"     */",
+			"    ${6:}",
+			"    /**",
+			"     * Expressions",
+			"     */",
+			"    ${7:}",
+			"}",
+			"export const LostCategory = new MyCategory();"
+		],
+		"description": "Creates empty category structure"
+	},
+
+	"LostAction": {
+		"prefix": "!ea",
+		"body": [
+			"@Action({",
+			"    Id: `${1:doAction}`,",
+			"    Name: `${2:}`,",
+			"    DisplayText: `${3:}`,",
+			"    Description: `${4:}`,",
+			"    Params: [",
+			"        ${5:}",
+			"    ]",
+			"})",
+			"${1:doAction}(this: Instance) {",
+			"    ${6:}",
+			"};"
+		],
+		"description": "Creates action entity"
+	},
+
+	"LostCondition": {
+		"prefix": "!ec",
+		"body": [
+			"@Condition({",
+			"    Id: `${1:onCondition}`,",
+			"    Name: `${2:}`,",
+			"    DisplayText: `${3:}`,",
+			"    Description: `${4:}`,",
+			"    IsTrigger: ${5:true}",
+			"})",
+			"${1:onCondition}(this: Instance) {",
+			"    ${6:}",
+			"};"
+		],
+		"description": "Creates action entity"
+	},
+
+	"LostExpression": {
+		"prefix": "!ee",
+		"body": [
+			"@Expression({",
+			"    Id: `${1:Expression}`,",
+			"    Name: `${1:Expression}`,",
+			"    Description: `${2:}`,",
+			"    ReturnType: '${3:string}'",
+			"})",
+			"${1:Expression}(this: Instance) {",
+			"    ${4:}",
+			"};"
+		],
+		"description": "Creates action entity"
+	}
+}

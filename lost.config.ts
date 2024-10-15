@@ -5,7 +5,7 @@ export const Config: LostConfig<'plugin'> = {
     Deprecated: false,
 
     SupportsWorkerMode: false,
-    MinConstructVersion: "r397-4", 
+    MinConstructVersion: "r397-4",
     CanBeBundled: false,
     IsSingleGlobal: true,
 
@@ -18,8 +18,5 @@ export const Config: LostConfig<'plugin'> = {
     Author: 'lostinmind.',
     WebsiteURL: `https://addon.com`,
     DocsURL: `https://docs.addon.com`,
-    
-    Scripts: [],
-    RemoteScripts: [],
-    Files: []
+
 }

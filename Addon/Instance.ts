@@ -11,7 +11,7 @@ class LostInstance extends globalThis.ISDKInstanceBase {
 		const properties = this._getInitProperties();
 
         if (properties) {
-            // console.log(properties);
+
         }
 
 	}
@@ -19,7 +19,7 @@ class LostInstance extends globalThis.ISDKInstanceBase {
 	_release() {
 		super._release();
 	}
-	
+
 };
 
 C3.Plugins[Config.AddonId].Instance = LostInstance;
