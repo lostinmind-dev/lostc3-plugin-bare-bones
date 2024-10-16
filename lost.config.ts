@@ -1,4 +1,4 @@
-import type { LostConfig } from "jsr:@lost-c3/lib@0.1.6";
+import type { LostConfig } from "jsr:@lost-c3/lib";
 
 export const Config: LostConfig<'plugin'> = {
     Type: 'plugin',

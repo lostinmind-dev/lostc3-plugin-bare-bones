@@ -1,4 +1,4 @@
-import { PluginProperty } from "jsr:@lost-c3/lib@0.1.6";
+import { PluginProperty } from "jsr:@lost-c3/lib";
 
 const PluginProperties: PluginProperty[] = [
     new PluginProperty({Type: 'integer', Id: 'integerProperty',

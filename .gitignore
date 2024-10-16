@@ -1,1 +1,3 @@
+*.c3addon
+Builds/Source
 deno.lock

@@ -1,7 +1,7 @@
-import { Category, Action, Condition, Expression, Param } from 'jsr:@lost-c3/lib@0.1.6';
+import { Category, Action, Condition, Expression, Param } from 'jsr:@lost-c3/lib';
 import type { Instance } from '../Instance.ts';
 
-@Category({Id: 'categoryId', Name: 'Category Name', Deprecated: false, InDevelopment: false})
+@Category({Id: 'sdf', Name: 'sdf', Deprecated: false, InDevelopment: false})
 class MyCategory {
     /**
      * Actions
