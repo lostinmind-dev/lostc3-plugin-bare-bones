@@ -1,6 +1,6 @@
 import type { LostConfig } from "jsr:@lost-c3/lib";
 
-export const Config: LostConfig<'plugin'> = {
+const Config: LostConfig<'plugin'> = {
     Type: 'plugin',
     Deprecated: false,
 
@@ -19,4 +19,6 @@ export const Config: LostConfig<'plugin'> = {
     WebsiteURL: `https://addon.com`,
     DocsURL: `https://docs.addon.com`,
 
-}
+};
+
+export default Config;

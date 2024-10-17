@@ -7,4 +7,4 @@ const PluginProperties: PluginProperty[] = [
     }),
 ]
 
-export { PluginProperties };
+export default PluginProperties;

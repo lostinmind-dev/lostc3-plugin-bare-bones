@@ -5,8 +5,8 @@
 			"import { Category, Action, Condition, Expression, Param } from 'jsr:@lost-c3/lib';",
 			"import type { Instance } from '../Instance.ts';",
 			"",
-			"@Category({Id: '${1:categoryId}', Name: '${2:Category Name}', Deprecated: ${3:false}, InDevelopment: ${4:false}})",
-			"class MyCategory {",
+			"@Category({Id: '${0:categoryId}', Name: '${1:Category Name}', Deprecated: ${2:false}, InDevelopment: ${3:false}})",
+			"export default class ${4:MyCategory} {",
 			"    /**",
 			"     * Actions",
 			"     */",
@@ -20,7 +20,6 @@
 			"     */",
 			"    ${7:}",
 			"}",
-			"export const LostCategory = new MyCategory();"
 		],
 		"description": "Creates empty category structure"
 	},
