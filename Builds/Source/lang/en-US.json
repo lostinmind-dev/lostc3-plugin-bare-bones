@@ -1,0 +1,25 @@
+{
+    "languageTag": "en-US",
+    "fileDescription": "Strings for Lost addon for Construct 3 addon.",
+    "text": {
+        "plugins": {
+            "lost_myaddon": {
+                "name": "LostPluginName",
+                "description": "Amazing addon made with Lost.",
+                "help-url": "https://docs.addon.com",
+                "properties": {
+                    "integerProperty": {
+                        "name": "Integer",
+                        "desc": "There is no any description yet..."
+                    }
+                },
+                "aceCategories": {
+                    "categoryId": "Category Name"
+                },
+                "conditions": {},
+                "actions": {},
+                "expressions": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "min-construct-version": "r397-4",
+    "is-c3-addon": true,
+    "sdk-version": 2,
+    "type": "plugin",
+    "name": "Lost addon for Construct 3",
+    "id": "Lost_MyAddon",
+    "version": "1.0.0.0",
+    "author": "lostinmind.",
+    "website": "https://addon.com",
+    "documentation": "https://docs.addon.com",
+    "description": "Amazing addon made with Lost.",
+    "editor-scripts": [
+        "plugin.js",
+        "type.js",
+        "instance.js"
+    ],
+    "file-list": [
+        "c3runtime/plugin.js",
+        "c3runtime/type.js",
+        "c3runtime/instance.js",
+        "c3runtime/conditions.js",
+        "c3runtime/actions.js",
+        "c3runtime/expressions.js",
+        "lang/en-US.json",
+        "aces.json",
+        "addon.json",
+        "plugin.js",
+        "instance.js",
+        "type.js",
+        "icon.svg"
+    ]
+}
