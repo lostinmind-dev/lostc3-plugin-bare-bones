@@ -7,8 +7,10 @@
     "experimentalDecorators": true
   },
   "tasks": {
-    "build": "lost build",
-    "serve": "lost serve"
+    "build": "lost build -l",
+    "serve": "lost serve -l",
+    "build:online": "lost build",
+    "serve:online": "lost serve"
   },
   "imports": {
     "@config": "./lost.config.ts"
