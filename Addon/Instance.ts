@@ -1,4 +1,4 @@
-import Config from "@config";
+import Config from "../lost.config.ts";
 
 const C3 = globalThis.C3;
 
@@ -11,7 +11,7 @@ class LostInstance extends globalThis.ISDKInstanceBase {
 		const properties = this._getInitProperties();
 
         if (properties) {
-
+			C3.Plugins['']
         }
 
 	}

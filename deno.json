@@ -2,17 +2,11 @@
   "name": "@username/my-first-lost-addon",
   "version": "1.0.0",
   "compilerOptions": {
-    "noImplicitOverride": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "noImplicitOverride": false
   },
   "tasks": {
-    "build": "lost build -l",
-    "serve": "lost serve -l",
+    "update:lost": "deno uninstall lost -g && deno cache --reload ./ & deno install --name lost jsr:@lost-c3/lib/cli --global -f -A & deno cache --reload ./",
     "build:online": "lost build",
     "serve:online": "lost serve"
-  },
-  "imports": {
-    "@config": "./lost.config.ts"
   }
 }

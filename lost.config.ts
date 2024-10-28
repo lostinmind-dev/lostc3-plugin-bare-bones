@@ -19,6 +19,10 @@ const Config: LostConfig<'plugin'> = {
     WebsiteURL: `https://addon.com`,
     DocsURL: `https://docs.addon.com`,
 
+    Files: [
+        {FileName: "styles.css", Type: 'copy-to-output'}
+    ]
+
 };
 
 export default Config;
