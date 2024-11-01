@@ -1,4 +1,5 @@
 import { Category, Action, Condition, Expression, Param } from 'jsr:@lost-c3/lib';
+//@ts-ignore
 import type { Instance } from '../Instance.ts';
 
 @Category({Id: 'categoyId', Name: 'Category Name'})
@@ -8,7 +9,7 @@ export default class MyCategory {
      */
     @Action({
         Id: `doAction`,
-        Name: `Nmae`,
+        Name: `Name`,
         DisplayText: `Action`,
         Description: ``,
         Params: [
