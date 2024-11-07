@@ -1,11 +1,11 @@
-import type { LostConfig } from "jsr:@lost-c3/lib";
+import { type LostConfig, STABLE, BETA, LTS } from "jsr:@lost-c3/lib@1.2.5";
 
 const Config: LostConfig<'plugin'> = {
     Type: 'plugin',
     Deprecated: false,
 
     SupportsWorkerMode: false,
-    MinConstructVersion: "r397-4",
+    MinConstructVersion: STABLE.R407_2,
     CanBeBundled: false,
     IsSingleGlobal: true,
 
