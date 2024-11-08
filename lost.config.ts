@@ -1,11 +1,11 @@
-import { type LostConfig, STABLE, BETA, LTS } from "jsr:@lost-c3/lib@1.2.5";
+import { type LostConfig, STABLE, BETA, LTS } from "jsr:@lost-c3/lib@2.0.0";
 
 const Config: LostConfig<'plugin'> = {
     Type: 'plugin',
     Deprecated: false,
 
     SupportsWorkerMode: false,
-    MinConstructVersion: STABLE.R407_2,
+    // MinConstructVersion: STABLE.R407_2,
     CanBeBundled: false,
     IsSingleGlobal: true,
 
@@ -17,12 +17,7 @@ const Config: LostConfig<'plugin'> = {
     Version: '1.0.0.0',
     Author: 'lostinmind.',
     WebsiteURL: `https://addon.com`,
-    DocsURL: `https://docs.addon.com`,
-
-    Files: [
-        {FileName: "styles.css", Type: 'copy-to-output'}
-    ]
-
+    DocsURL: `https://docs.addon.com`
 };
 
 export default Config;

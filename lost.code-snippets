@@ -5,7 +5,7 @@
 			"import { Category, Action, Condition, Expression, Param } from 'jsr:@lost-c3/lib';",
 			"import type { Instance } from '../Instance.ts';",
 			"",
-			"@Category({Id: '${0:categoryId}', Name: '${1:Category Name}', Deprecated: ${2:false}, InDevelopment: ${3:false}})",
+			"@Category({Id: '${1:categoryId}', Name: '${2:Category Name}', Deprecated: ${3:false}, InDevelopment: ${4:false}})",
 			"export default class ${4:MyCategory} {",
 			"    /**",
 			"     * Actions",
@@ -53,9 +53,7 @@
 			"    Description: `${4:}`,",
 			"    IsTrigger: ${5:true}",
 			"})",
-			"${1:onCondition}(this: Instance) {",
-			"    ${6:}",
-			"};"
+			"${1:onCondition}(this: Instance) { return ${6:true} };"
 		],
 		"description": "Creates action entity"
 	},
@@ -70,7 +68,7 @@
 			"    ReturnType: '${3:string}'",
 			"})",
 			"${1:Expression}(this: Instance) {",
-			"    ${4:}",
+			"    return ${4:};",
 			"};"
 		],
 		"description": "Creates action entity"
