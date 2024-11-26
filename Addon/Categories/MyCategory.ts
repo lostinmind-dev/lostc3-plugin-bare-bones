@@ -1,4 +1,4 @@
-import { Category, Action, Condition, Expression, addParam, Param } from 'jsr:@lost-c3/lib@2.1.0';
+import { Category, Action, Condition, Expression, addParam, Param } from 'jsr:@lost-c3/lib@3.0.0';
 import type { Instance } from '@Instance';
 
 @Category('categoyId', 'My Category')
