@@ -1,47 +1,28 @@
-import { Category, Action, Condition, Expression, Param } from 'jsr:@lost-c3/lib';
-import type { Instance } from '../Instance.ts';
+import { Category, Action, Condition, Expression, addParam, Param } from 'jsr:@lost-c3/lib@2.1.0';
+import type { Instance } from '@Instance';
 
-@Category({Id: 'categoyId', Name: 'My Category'})
+@Category('categoyId', 'My Category')
 export default class MyCategory {
-    /**
-     * Actions
-     */
-    @Action({
-        Id: `doAction`,
-        Name: `Name`,
-        DisplayText: `Action`,
-        Description: ``,
-        Params: [
-            
+    /** @Actions */
+    @Action('doAction', 'Do action', 'Do action', 'Do something...', {
+        params: [
+            addParam('', '', { type: Param.String })
         ]
     })
     doAction(this: Instance) {
-        
-    };
-    
-    /**
-     * Conditions
-     */
-    @Condition({
-        Id: `onCondition`,
-        Name: `On condition`,
-        DisplayText: `On condition`,
-        Description: ``,
-        IsTrigger: true
-    })
-    onCondition(this: Instance) { return false };
-    
-    /**
-     * Expressions
-     */
-    @Expression({
-        Id: `Expression`,
-        Name: `Expression`,
-        Description: ``,
-        ReturnType: 'string'
-    })
-    Expression(this: Instance) {
-        return '';
-    };
-    
+
+    }
+
+    /** @Conditions */
+    @Condition('onCondition', 'On condition', 'On condition')
+    onCondition() {
+        return false;
+    }
+
+    /** @Expressions */
+    @Expression('expression', 'Expression')
+    Expression() {
+        return 'Value';
+    }
+
 }

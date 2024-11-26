@@ -1,23 +1,24 @@
-import { type LostConfig, STABLE, BETA, LTS } from "jsr:@lost-c3/lib@2.0.0";
+import type { LostConfig } from 'jsr:@lost-c3/lib@3.0.0';
 
-const Config: LostConfig<'plugin'> = {
-    Type: 'plugin',
-    Deprecated: false,
+const config: LostConfig = {
+    type: 'plugin',
+    // deprecated?: boolean;
+    // minConstructVersion?: string;
+    // canBeBundled?: boolean;
+    isSingleGlobal: true,
+    objectName: 'LostPlugin',
 
-    SupportsWorkerMode: false,
-    // MinConstructVersion: STABLE.R407_2,
-    CanBeBundled: false,
-    IsSingleGlobal: true,
+    addonId: 'LostPluginId',
+    category: 'general',
+    addonName: 'Lost plugin for Construct 3',
+    addonDescription: 'My awesome addon was made with Lost',
+    version: '1.0.0.0',
+    author: 'lostinmind.',
+    docsUrl: 'https://myaddon.com/docs',
+    helpUrl: {
+        EN: 'https://myaddon.com/help/en'
+    },
+    websiteUrl: 'https://myaddon.com'
+}
 
-    ObjectName: 'LostPluginName',
-    AddonId: 'Lost_MyAddon',
-    AddonName: 'Lost addon for Construct 3',
-    AddonDescription: 'Amazing addon made with Lost.',
-    Category: 'general',
-    Version: '1.0.0.0',
-    Author: 'lostinmind.',
-    WebsiteURL: `https://addon.com`,
-    DocsURL: `https://docs.addon.com`
-};
-
-export default Config;
+export default config;
