@@ -1,11 +1,7 @@
-import type { Instance } from "@Runtime/Instance.ts";
-
-class LostType extends globalThis.ISDKObjectTypeBase<Instance> {
+class LostPlugin extends globalThis.ISDKPluginBase {
 	constructor() {
 		super();
 	}
-
-	_onCreate() { }
 };
 
-export type { LostType };
+export type { LostPlugin };
