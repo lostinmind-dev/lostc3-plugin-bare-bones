@@ -1,7 +1,8 @@
-import type { LostConfig } from 'jsr:@lost-c3/lib@3.0.0';
+import { defineConfig } from "./deps.ts";
 
-const config: LostConfig = {
+export default defineConfig({
     type: 'plugin',
+    pluginType: 'object',
     // deprecated?: boolean;
     // minConstructVersion?: string;
     // canBeBundled?: boolean;
@@ -19,6 +20,4 @@ const config: LostConfig = {
         EN: 'https://myaddon.com/help/en'
     },
     websiteUrl: 'https://myaddon.com'
-}
-
-export default config;
+})

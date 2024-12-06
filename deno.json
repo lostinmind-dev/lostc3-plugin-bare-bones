@@ -1,5 +1,4 @@
 {
-    "version": "1.0.0",
     "compilerOptions": {
         "lib": [
             "deno.window",
@@ -14,6 +13,7 @@
         "serve": "lost serve"
     },
     "imports": {
-        "@Instance": "./Addon/Instance.ts"
+        "@Runtime/": "./Addon/",
+        "@Editor/": "./Editor/"
     }
 }

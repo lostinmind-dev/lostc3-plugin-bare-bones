@@ -2,10 +2,8 @@
   "version": "4",
   "specifiers": {
     "jsr:@david/code-block-writer@13": "13.0.3",
-    "jsr:@lost-c3/lib@*": "1.2.2",
-    "jsr:@lost-c3/lib@1.2.4": "1.2.4",
-    "jsr:@lost-c3/lib@2.1.0": "2.1.0",
-    "jsr:@lost-c3/lib@3.0.0": "3.0.0",
+    "jsr:@lost-c3/lib@3.2.0": "3.2.0",
+    "jsr:@std/cli@1.0.6": "1.0.6",
     "jsr:@std/fmt@1.0.2": "1.0.2",
     "jsr:@std/fs@1": "1.0.6",
     "jsr:@std/path@1": "1.0.8",
@@ -21,15 +19,10 @@
     "@david/code-block-writer@13.0.3": {
       "integrity": "f98c77d320f5957899a61bfb7a9bead7c6d83ad1515daee92dbacc861e13bb7f"
     },
-    "@lost-c3/lib@1.2.2": {
-      "integrity": "0516cc7740ccf0369c5dbb3faf5430ecc9704b1a7589d01b5a885b74546ceaf5"
-    },
-    "@lost-c3/lib@1.2.4": {
-      "integrity": "3b5da38b2b134b98d97fe25e1ae03805b9d4cf77ca5d6f35498c6749d7689540"
-    },
-    "@lost-c3/lib@2.1.0": {
-      "integrity": "e013488182af5b76a25ead8cc3f77425be3fe2001e1b6fb67d75e391b26523f8",
+    "@lost-c3/lib@3.2.0": {
+      "integrity": "39cb20d56c4a43c8ee031006bbed31514d0317906601f91640fb340fb1ef030b",
       "dependencies": [
+        "jsr:@std/cli",
         "jsr:@std/fmt",
         "jsr:@std/fs",
         "jsr:@std/path@1.0.6",
@@ -39,17 +32,8 @@
         "npm:ts-md5"
       ]
     },
-    "@lost-c3/lib@3.0.0": {
-      "integrity": "4ea47561a8414771f8d318cb5afd3d5be0f49f87c44d99ac101f4f3451d20d38",
-      "dependencies": [
-        "jsr:@std/fmt",
-        "jsr:@std/fs",
-        "jsr:@std/path@1.0.6",
-        "jsr:@std/path@1.0.8",
-        "jsr:@ts-morph/ts-morph",
-        "jsr:@zip-js/zip-js",
-        "npm:ts-md5"
-      ]
+    "@std/cli@1.0.6": {
+      "integrity": "d22d8b38c66c666d7ad1f2a66c5b122da1704f985d3c47f01129f05abb6c5d3d"
     },
     "@std/fmt@1.0.2": {
       "integrity": "87e9dfcdd3ca7c066e0c3c657c1f987c82888eb8103a3a3baa62684ffeb0f7a7"
@@ -88,5 +72,32 @@
     "ts-md5@1.3.1": {
       "integrity": "sha512-DiwiXfwvcTeZ5wCE0z+2A9EseZsztaiZtGrtSaY5JOD7ekPnR/GoIVD5gXZAlK9Na9Kvpo9Waz5rW64WKAWApg=="
     }
+  },
+  "remote": {
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/cli/global.ts": "4fd6a3dfbe8693f0017e62df4a8255ea2e797b895a461fded7c98dc75a8f3838",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/deps.ts": "389d1c91ac7352e3bf5d5ee8479c52b1b3441f29a9e2ea66f36af079dbcc26ca",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/addon-file-manager.ts": "6e0074eab6b790e5ba1107d8830da3259b67c80b5f24e3260c1e3bbabd5ed9d4",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/addon.ts": "496fea2a6335677da0665690efce4b2b19bc90c771b7494b557d0600f85f9048",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/behavior.ts": "74ea365a615050acd3a1bcea64a6f8f2644f058ecb08b25ae192a992e30f5e90",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/config.ts": "0de3470128a4debdd5f2ce7440fc4888b10b207be4e2215fc45466121affb918",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/defaults/addon-icon.ts": "b3de1877589fe274b0d526df89585448a76ffa210ee76402106164eec45b1e79",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/entities/action.ts": "b7e8bc194b2166c56666dedb0c0b557eea776d8939e140c3f54c2af7c7dad513",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/entities/category.ts": "01098f52e10aa4d6218c88cbc52fc6349ad50e28c98052c2cbcc8ed86ef75f57",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/entities/condition.ts": "3a6446928349e9dc8214f151477be14f1c7f78f9b09d0156c36167a7ca943345",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/entities/entity.ts": "d797c7bf2ab39e88189827fc533077daf98cc81f1d824c1e59dad31e17eb7db5",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/entities/expression.ts": "8a8c5324d36c2c36f86f50576e8737549a3983b5889b65c3c7b838907db9445b",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/entities/parameter.ts": "2b79beb65d23ca7d7a6162c5e598be6ebfea2774554c71f7157f4a1bf61e3d75",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/entities/plugin-property.ts": "cd40e53b8fd0559bea7df04b052d568067c8916bc077d9ff39c48bb998f3c74c",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/index.ts": "b4e7dfa6fd9ce99f33f2dbc373cb8e0c1409fbed3dc294f4626b73a8af0df815",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/lost-addon-data.ts": "61ed2bcc0b59026db07590efa542e72e511e52fc52e7b4e8e57f27e0174e08ce",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/misc/text-formatting.ts": "36b64bca8d3d25a53bcbe735aa0845f9447161ceadbd9b27ecfe401cf8b3d1d7",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/lib/plugin.ts": "03879da6a1c0cbe83110e2dbfaf02361c1f1538fd2c2536ab6d322d30600fbd3",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/mod.ts": "b035f59ea70fa9587b586619dc21ec12c3eabf6d089b74f47965d2f7ae18da00",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/shared/logger.ts": "a5ab714ec0f076d9228e690bfdd9247ce85393821115d6ca7b2de57a054994dc",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/shared/mime.ts": "389703ece93b51f2cbbbd52a08d9392a138a493e31eddcf82f3809cd3f0db346",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/shared/misc.ts": "6482145a2c7e6a54d724d99422ccfb9296b042a7a1daf2673dddc0850e5aa43d",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/shared/paths.ts": "a91359569850a981a0e53f00bbec9b46ff798e1203849f28ad7f1410c5eb16e9",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/shared/transpile-ts.ts": "8b3bb78759e968dfc63bf47d120a111c84af9961ee23eb6df0ffc73e6d27e743",
+    "https://raw.githubusercontent.com/lostinmind-dev/lost-c3/refs/heads/test/shared/types.ts": "aec1cf2cce01b033fa564ff6dae94a0d89ded21586feb3b4fa30d84ff5359b47"
   }
 }

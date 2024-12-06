@@ -1,7 +1,11 @@
-const C3 = globalThis.C3;
+import type { Instance } from "@Runtime/Instance.ts";
 
-C3.Plugins[Lost.addonId] = class LostPlugin extends globalThis.ISDKPluginBase {
+class LostType extends globalThis.ISDKObjectTypeBase<Instance> {
 	constructor() {
 		super();
 	}
+
+	_onCreate() { }
 };
+
+export type { LostType };
