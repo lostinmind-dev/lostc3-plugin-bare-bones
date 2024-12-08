@@ -1,6 +1,6 @@
 import { defineConfig } from "./deps.ts";
 
-export default defineConfig({
+export default defineConfig<'plugin'>({
     type: 'plugin',
     pluginType: 'object',
     // deprecated?: boolean;

@@ -1,28 +1,44 @@
 {
 	"LostPlugin": {
-		"prefix": "!addon",
+		"prefix": "!plugin",
 		"body": [
-			"import { Plugin, Property } from 'jsr:@lost-c3/lib@3.0.0';",
+			"import { defineAddon, Plugin, Property } from 'jsr:@lost-c3/lib${1:@Version}';",
+			"import type { EditorInstance } from '@Editor/Instance.ts';",
+			"import type { EditorType } from '@Editor/Type.ts';",
 			"import config from './lost.config.ts';",
 			"",
-			"const Addon = new Plugin(config)",
 			"",
-			"Addon",
-			"    .addRemoteScripts('')",
-			";",
-			"",
-			"export default Addon;"
+			"export default defineAddon(",
+			"    new Plugin<EditorInstance, EditorType>(config)",
+			"        /** @Properties */",
+			"        ${2:}",
+			")"
 		],
-		"description": ""
+		"description": "Creates structure for 'addon.ts' file for 'plugin' addon type"
+	},
+	"LostBehavior": {
+		"prefix": "!plugin",
+		"body": [
+			"import { defineAddon, Behavior, Property } from 'jsr:@lost-c3/lib${1:@Version}';",
+			"import config from './lost.config.ts';",
+			"",
+			"",
+			"export default defineAddon(",
+			"    new Behavior(config)",
+			"        /** @Properties */",
+			"        ${2:}",
+			")"
+		],
+		"description": "Creates structure for 'addon.ts' file for 'behavior' addon type"
 	},
 	"LostCategory": {
 		"prefix": "!cc",
 		"body": [
-			"import { Category, Action, Condition, Expression, addParam, Param } from 'jsr:@lost-c3/lib@3.0.0';",
+			"import { Category, Action, Condition, Expression, addParam, Param } from 'jsr:@lost-c3/lib${1:@Version}';",
 			"import type { Instance } from '../Instance.ts';",
 			"",
-			"@Category('${1:categoryId}', '${2:Category Name}')",
-			"export default class ${3:MyCategory} {",
+			"@Category('${2:categoryId}', '${3:Category Name}')",
+			"export default class {",
 			"    /** @Actions */",
 			"    ${4:}",
 			"    /** @Conditions */",
@@ -33,50 +49,47 @@
 		],
 		"description": "Creates empty category structure"
 	},
-
 	"LostAction": {
 		"prefix": "!ea",
 		"body": [
 			"@Action(",
-			"    `${1:doAction}`,",
-			"    `${2:}`,",
-			"    `${3:}`,",
-			"    `${4:}`, {",
+			"    `${1:id}`,",
+			"    `${2:name}`,",
+			"    `${3:displayText}`,",
+			"    `${4:description}`, {",
 			"        params: [${5:}]",
 			"})",
-			"${1:doAction}(this: Instance) {",
-			"    ${6:}",
+			"${1:doAction}(this: Instance, ${6:params}: ${7:type}) {",
+			"    ${8:}",
 			"};"
 		],
 		"description": "Creates action entity"
 	},
-
 	"LostCondition": {
 		"prefix": "!ec",
 		"body": [
 			"@Condition(",
-			"    `${1:onCondition}`,",
-			"    `${2:}`,",
-			"    `${3:}`,",
-			"    `${4:}`, {",
+			"    `${1:id}`,",
+			"    `${2:name}`,",
+			"    `${3:displayText}`,",
+			"    `${4:description}`, {",
 			"        isTrigger: ${5:true}",
 			"})",
 			"${1:onCondition}(this: Instance) { return ${6:true} };"
 		],
 		"description": "Creates condition entity"
 	},
-
 	"LostExpression": {
 		"prefix": "!ee",
 		"body": [
 			"@Expression(",
-			"    `${1:Expression}`,",
-			"    `${1:Expression}`,",
-			"    `${2:}`, {",
+			"    `${1:id}`,",
+			"    `${1:nameAndDisplayText}`,",
+			"    `${2:description}`, {",
 			"         returnType: '${3:string}'",
 			"})",
 			"${1:Expression}(this: Instance) {",
-			"    return ${4:};",
+			"    return '${4:}';",
 			"};"
 		],
 		"description": "Creates expression entity"

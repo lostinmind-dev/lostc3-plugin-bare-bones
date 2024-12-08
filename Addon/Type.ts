@@ -8,4 +8,5 @@ class LostType extends globalThis.ISDKObjectTypeBase<Instance> {
 	_onCreate() {}
 };
 
+/** Important to save export type for Typescript compiler */
 export type { LostType };
