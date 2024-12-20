@@ -6,9 +6,13 @@
     "jsr:@lost-c3/lib@3.2.4": "3.2.4",
     "jsr:@lost-c3/lib@3.3.0": "3.3.0",
     "jsr:@lost-c3/lib@3.3.4": "3.3.4",
+    "jsr:@lost-c3/lib@4.0.0": "4.0.0",
+    "jsr:@lost-c3/lib@4.0.1": "4.0.1",
+    "jsr:@lost-c3/lib@4.0.2": "4.0.2",
+    "jsr:@lost-c3/lib@4.0.3": "4.0.3",
     "jsr:@std/cli@1.0.6": "1.0.6",
     "jsr:@std/fmt@1.0.2": "1.0.2",
-    "jsr:@std/fs@1": "1.0.6",
+    "jsr:@std/fs@1": "1.0.8",
     "jsr:@std/path@1": "1.0.8",
     "jsr:@std/path@1.0.6": "1.0.6",
     "jsr:@std/path@1.0.8": "1.0.8",
@@ -80,6 +84,62 @@
         "npm:uglify-js"
       ]
     },
+    "@lost-c3/lib@4.0.0": {
+      "integrity": "8e41cf78e0b8bd42f279943873b99e936f780ca5461c701d7c67bec6aa249cef",
+      "dependencies": [
+        "jsr:@std/cli",
+        "jsr:@std/fmt",
+        "jsr:@std/fs",
+        "jsr:@std/path@1.0.8",
+        "jsr:@ts-morph/ts-morph",
+        "jsr:@zip-js/zip-js",
+        "npm:ts-md5",
+        "npm:types-package-json",
+        "npm:uglify-js"
+      ]
+    },
+    "@lost-c3/lib@4.0.1": {
+      "integrity": "1c44ad3551d0d5d69f2c5db2b48a0c0eb64ff70374655da42634dd54842eada6",
+      "dependencies": [
+        "jsr:@std/cli",
+        "jsr:@std/fmt",
+        "jsr:@std/fs",
+        "jsr:@std/path@1.0.8",
+        "jsr:@ts-morph/ts-morph",
+        "jsr:@zip-js/zip-js",
+        "npm:ts-md5",
+        "npm:types-package-json",
+        "npm:uglify-js"
+      ]
+    },
+    "@lost-c3/lib@4.0.2": {
+      "integrity": "d8a8ab840c7db3b088eed1ea1fcab3ca872adfef327bb948b4e7d8dc91051889",
+      "dependencies": [
+        "jsr:@std/cli",
+        "jsr:@std/fmt",
+        "jsr:@std/fs",
+        "jsr:@std/path@1.0.8",
+        "jsr:@ts-morph/ts-morph",
+        "jsr:@zip-js/zip-js",
+        "npm:ts-md5",
+        "npm:types-package-json",
+        "npm:uglify-js"
+      ]
+    },
+    "@lost-c3/lib@4.0.3": {
+      "integrity": "c368326f456b516fc2aaa73025cdf2a9838045fe2054433b33664fd4d74b3e27",
+      "dependencies": [
+        "jsr:@std/cli",
+        "jsr:@std/fmt",
+        "jsr:@std/fs",
+        "jsr:@std/path@1.0.8",
+        "jsr:@ts-morph/ts-morph",
+        "jsr:@zip-js/zip-js",
+        "npm:ts-md5",
+        "npm:types-package-json",
+        "npm:uglify-js"
+      ]
+    },
     "@std/cli@1.0.6": {
       "integrity": "d22d8b38c66c666d7ad1f2a66c5b122da1704f985d3c47f01129f05abb6c5d3d"
     },
@@ -88,6 +148,18 @@
     },
     "@std/fs@1.0.6": {
       "integrity": "42b56e1e41b75583a21d5a37f6a6a27de9f510bcd36c0c85791d685ca0b85fa2",
+      "dependencies": [
+        "jsr:@std/path@^1.0.8"
+      ]
+    },
+    "@std/fs@1.0.7": {
+      "integrity": "95ac7326e0e59089c979706e17bb28db03b5fb41c5a37c9c556788198b0662d6",
+      "dependencies": [
+        "jsr:@std/path@^1.0.8"
+      ]
+    },
+    "@std/fs@1.0.8": {
+      "integrity": "161c721b6f9400b8100a851b6f4061431c538b204bb76c501d02c508995cffe0",
       "dependencies": [
         "jsr:@std/path@^1.0.8"
       ]

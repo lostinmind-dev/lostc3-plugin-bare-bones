@@ -1,6 +1,6 @@
 import { defineConfig } from "./deps.ts";
 
-export default defineConfig<'plugin'>({
+export default defineConfig<'plugin', 'object'>({
     type: 'plugin',
     pluginType: 'object',
     // deprecated?: boolean;
@@ -16,8 +16,6 @@ export default defineConfig<'plugin'>({
     version: '1.0.0.0',
     author: 'lostinmind.',
     docsUrl: 'https://myaddon.com/docs',
-    helpUrl: {
-        EN: 'https://myaddon.com/help/en'
-    },
+    helpUrl: 'https://myaddon.com/help/en',
     websiteUrl: 'https://myaddon.com'
 })
